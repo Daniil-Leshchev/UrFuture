@@ -19,6 +19,12 @@ class Professions(models.Model):
     class Meta:
         managed = False
         db_table = 'professions'
+        verbose_name = 'Profession'
+        verbose_name_plural = 'Professions'
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
 
 
 class Competencies(models.Model):
@@ -29,6 +35,12 @@ class Competencies(models.Model):
     class Meta:
         managed = False
         db_table = 'competencies'
+        verbose_name = 'Competency'
+        verbose_name_plural = 'Competencies'
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
 
 
 class Courses(models.Model):
@@ -44,6 +56,12 @@ class Courses(models.Model):
     class Meta:
         managed = False
         db_table = 'courses'
+        verbose_name = 'Course'
+        verbose_name_plural = 'Courses'
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
 
 
 class Disciplines(models.Model):
@@ -54,6 +72,12 @@ class Disciplines(models.Model):
     class Meta:
         managed = False
         db_table = 'disciplines'
+        verbose_name = 'Discipline'
+        verbose_name_plural = 'Disciplines'
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
 
 
 class Directions(models.Model):
@@ -63,6 +87,12 @@ class Directions(models.Model):
     class Meta:
         managed = False
         db_table = 'directions'
+        verbose_name = 'Direction'
+        verbose_name_plural = 'Directions'
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
 
 
 class DisciplinesDirections(models.Model):

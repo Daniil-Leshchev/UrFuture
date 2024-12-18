@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Professions, Competencies, Courses, Disciplines, Directions
 
-# Register your models here.
+admin.site.register((Professions, Competencies,
+                     Courses, Disciplines, Directions))
